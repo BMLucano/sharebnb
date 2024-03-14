@@ -25,7 +25,7 @@
 <br />
 <div align="center">
 <!--   <a href="https://github.com/github_username/repo_name"> -->
-    <img src="static/images/listing-demo.png" alt="Logo" width="200" height="150">
+    <img src="static/images/listing-demo.png" alt="Logo" width="500" height="450">
   </a>
 
 <h3 align="center">ShareBnB</h3>
