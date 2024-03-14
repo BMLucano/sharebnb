@@ -73,11 +73,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 ShareBnB is a full-stack app that allows users to explore and book backyard destinations. Users can login, add listings for others to book, artificially book listings, and view a profile page that shows listings being hosted and rented.
 
-This app was built with a pair programming partner at Rithm School in January 2024 during 4-day sprint. 
+This app was built with a pair programming partner at Rithm School in January 2024 during a 4-day sprint. We chose Flask for its lightweight capabilities, giving us the chance to get the project up and running quickly and efficeiently.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,6 +84,15 @@ This app was built with a pair programming partner at Rithm School in January 20
 
 ### Built With
 
+* ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+* ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
+* ![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)
+* ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+* ![SQLAlchemy Badge](https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=for-the-badge)
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![ElephantSQL](https://img.shields.io/badge/-ElephantSQL-336791?logo=elephantsql&logoColor=white&style=flat)
+* ![Render](https://img.shields.io/badge/-Render-333333?logo=render&logoColor=white&style=flat)
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
@@ -96,45 +103,36 @@ This app was built with a pair programming partner at Rithm School in January 20
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone repository.
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/BMLucano/sharebnb.git
+
    ```
-3. Install NPM packages
+2. Create a virtual environment and install dependencies.
    ```sh
-   npm install
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Create and seed database.
+   ```sh
+   createdb sharebnb
+   python seed.py
    ```
+4. Run app
+   ```sh
+   flask run
+   ```
+5. View on <a href="http://localhost:5000/">http://localhost:5000/</a>.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -143,20 +141,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
