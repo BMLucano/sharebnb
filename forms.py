@@ -96,12 +96,5 @@ class AddListingForm(FlaskForm):
                     FileAllowed(['png', 'jpg', 'jpeg'])]
     )
 
-
-# class TestingUploadForm(FlaskForm):
-#     photo = FileField(
-#         'Photo',
-#         validators=[InputRequired()]
-#     )
-
 class CSRFProtectForm(FlaskForm):
     """Form just for CSRF Protection."""

@@ -45,7 +45,7 @@ connect_db(app)
 #             print("***url", url )
 #     return render_template("upload.html")
 
-########################################### Authorization
+# Authorization
 @app.before_request
 def add_user_to_g():
     """If we're logged in, add curr user to Flask global."""
@@ -150,7 +150,7 @@ def logout():
     return redirect("/")
 
 
-############################################### Homepage
+# Homepage
 
 @app.get("/")
 def homepage():
@@ -158,7 +158,8 @@ def homepage():
 
     return render_template("homepage.html")
 
-############################################## Listings
+# Listings
+
 
 @app.get("/listings")
 def list_listings():
@@ -174,7 +175,7 @@ def list_listings():
         listings = Listing.query.filter(
             Listing.title.ilike(f"%{search_title}%"),
             Listing.city.ilike(f"%{search_city}%"),
-            ).all()
+        ).all()
 
     return render_template("listings/listings.html", listings=listings)
 
@@ -186,7 +187,8 @@ def listing_detail(listing_id):
     listing = Listing.query.get_or_404(listing_id)
     return render_template("listings/detail.html", listing=listing)
 
-###################################### User
+# User
+
 
 @app.get("/users/<int:user_id>")
 def show_user(user_id):
@@ -216,34 +218,34 @@ def add_listing(user_id):
 
     if form.validate_on_submit():
         new_listing = Listing.add_listing(
-            title = form.title.data,
-            description = form.description.data,
-            address = form.address.data,
-            city = form.city.data,
-            state = form.state.data,
-            zipcode = form.zipcode.data,
+            title=form.title.data,
+            description=form.description.data,
+            address=form.address.data,
+            city=form.city.data,
+            state=form.state.data,
+            zipcode=form.zipcode.data,
             price=form.price.data,
-            host_id= g.user.id
+            host_id=g.user.id
         )
         db.session.commit()
 
         photos = form.photo.data
 
         for photo in photos:
-            # if photo and allowed_file(photo.filename):
             # sanitizes photo inputs
             photo_name = secure_filename(photo.filename)
             # gives a unique photo name
-            new_photo_name = uuid.uuid4().hex + '.' + photo_name.rsplit('.', 1)[1].lower()
+            new_photo_name = uuid.uuid4().hex + '.' + \
+                photo_name.rsplit('.', 1)[1].lower()
 
-            #upload file to AWS S3 bucket
+            # upload file to AWS S3 bucket
             upload_file(photo, new_photo_name)
-            #create photo url to store in db
+            # create photo url to store in db
             photo_url = create_presigned_url(new_photo_name)
 
             listing_photo = Photo(
-                listing_id= new_listing.id,
-                photo_url = photo_url
+                listing_id=new_listing.id,
+                photo_url=photo_url
             )
 
             db.session.add(listing_photo)
@@ -294,10 +296,12 @@ def bookings_listing():
     listing_id = int(request.args['listing_id'])
     listing = Listing.query.get_or_404(listing_id)
 
-    booking = Booking.query.filter_by(renter_id=g.user.id, listing_id=listing.id).first()
+    booking = Booking.query.filter_by(
+        renter_id=g.user.id,
+        listing_id=listing.id).first()
     booked = booking is not None
 
-    return jsonify(booked = booked)
+    return jsonify(booked=booked)
 
 
 @app.post("/api/book")
@@ -330,9 +334,9 @@ def cancel_listing():
     listing_id = int(data['listing_id'])
     listing = Listing.query.get_or_404(listing_id)
 
-    Booking.query.filter_by(listing_id=listing_id, renter_id=g.user.id).delete()
+    Booking.query.filter_by(listing_id=listing_id,
+                            renter_id=g.user.id).delete()
     db.session.commit()
 
     res = {"canceled": listing.id}
     return jsonify(res)
-
