@@ -36,6 +36,9 @@
     <br />
     <br />
     <a href="https://bml-sharebnb.onrender.com/">View Demo</a>
+    <p>Demo login credentials:</p>
+    <p>Username: test</p>
+    <p>Password: secret</p>
     ·
   </p>
 </div>
@@ -60,9 +63,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -79,7 +79,6 @@ ShareBnB is a full-stack app that allows users to explore and book backyard dest
 
 This app was built with a pair programming partner at Rithm School in January 2024 during 4-day sprint. 
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,16 +139,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 <!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -172,11 +161,6 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
