@@ -75,7 +75,7 @@
 
 ShareBnB is a full-stack app that allows users to explore and book backyard destinations. Users can login, add listings for others to book, artificially book listings, and view a profile page that shows listings being hosted and rented.
 
-This app was built with a pair programming partner at Rithm School in January 2024 during a 4-day sprint. We chose Flask for its lightweight capabilities, giving us the chance to get the project up and running quickly and efficeiently.
+This app was built with a pair programming partner at Rithm School in January 2024 during a 4-day sprint. We chose Flask for its lightweight capabilities, giving us the chance to get the project up and running quickly and efficiently.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
