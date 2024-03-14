@@ -24,8 +24,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+<!--   <a href="https://github.com/github_username/repo_name"> -->
+<!--     <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
   </a>
 
 <h3 align="center">ShareBnB</h3>
@@ -149,13 +149,6 @@ To get a local copy up and running follow these steps.
 
 
 <!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
