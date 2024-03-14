@@ -31,16 +31,12 @@
 <h3 align="center">ShareBnB</h3>
 
   <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    An app for finding your next backyard destination!
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <br />
+    <a href="https://bml-sharebnb.onrender.com/">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
   </p>
 </div>
 
@@ -79,6 +75,10 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
+ShareBnB is a full-stack app that allows users to explore and book backyard destinations. Users can login, add listings for others to book, artificially book listings, and view a profile page that shows listings being hosted and rented.
+
+This app was built with a pair programming partner at Rithm School in January 2024 during 4-day sprint. 
+
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -87,7 +87,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Python]]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
